@@ -1,0 +1,11 @@
+{
+  "name": "business-model-canvas",
+  "version": "1.0.0",
+  "description": "A business model canvas by Colorful Dots, LLC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric David Smith <erictherobot@gmail.com>",
+  "license": "ISC"
+}
