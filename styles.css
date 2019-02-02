@@ -13,12 +13,54 @@ input {
   width: 100%;
 }
 textarea {
-  width: 96%;
-  max-width: 96%;
-  min-width: 96%;
-  padding: 2%;
-  border-top: 1px solid #673fb4;
+  font-size: 0.85rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 5px 0px;
+  border-top: 1px solid rgba(103, 58, 183, 0.2);
   border-right: 0;
   border-left: 0;
   border-bottom: 0;
+}
+input:focus {
+  outline: none !important;
+  border-color: #673fb4;
+  box-shadow: 0 0 10px #673fb4;
+  background-color: #f8f4ff;
+}
+textarea:focus {
+  outline: none !important;
+  border-color: #673fb4;
+  box-shadow: 0 0 10px #673fb4;
+  background-color: #f8f4ff;
+}
+textarea {
+  resize: both;
+  min-height: 150px;
+}
+textarea.vert {
+  resize: vertical;
+}
+textarea.noResize {
+  resize: none;
+}
+.card-title {
+  font-size: 1.1rem;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(103, 58, 183, 0.2);
+  border-radius: 0.25rem;
+}
+.btn-purple {
+  border: 1px solid rgba(103, 58, 183, 0.2);
 }
