@@ -2,6 +2,10 @@
 
 A business model canvas by [Colorful Dots, LLC](https://colorfuldots.com)
 
+### Demo
+
+[View Demo](https://colorful-dots-llc-business-model-canvas.netlify.com/)
+
 ### Screenshot
 
 ![A business model canvas by Colorful Dots, LLC](/screenshot.png?raw=true 'A business model canvas by Colorful Dots, LLC')
