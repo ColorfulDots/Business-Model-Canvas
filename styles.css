@@ -8,9 +8,28 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-label,
+a:link {
+  color: #673fb4;
+}
+a:visited {
+  color: #673fb4;
+}
+a:hover {
+  color: #673fb4;
+  text-decoration: underline;
+}
+a:active {
+  color: #673fb4;
+}
+label {
+  width: 100%;
+  padding: 5px 0px;
+}
 input {
   width: 100%;
+  padding: 5px 0px;
+  border: 1px solid rgba(103, 58, 183, 0.2);
+  border-radius: 0.25rem;
 }
 textarea {
   font-size: 0.85rem;
@@ -22,17 +41,18 @@ textarea {
   border-right: 0;
   border-left: 0;
   border-bottom: 0;
+  border-radius: 0.25rem;
 }
 input:focus {
   outline: none !important;
   border-color: #673fb4;
-  box-shadow: 0 0 10px #673fb4;
+  box-shadow: 0 0 1px #673fb4;
   background-color: #f8f4ff;
 }
 textarea:focus {
   outline: none !important;
   border-color: #673fb4;
-  box-shadow: 0 0 10px #673fb4;
+  box-shadow: 0 0 1px #673fb4;
   background-color: #f8f4ff;
 }
 textarea {
@@ -61,6 +81,30 @@ textarea.noResize {
   border: 1px solid rgba(103, 58, 183, 0.2);
   border-radius: 0.25rem;
 }
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
 .btn-purple {
   border: 1px solid rgba(103, 58, 183, 0.2);
+}
+
+.btn-outline-primary {
+  color: #673fb4;
+  border-color: #673fb4;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #673fb4;
+  border-color: #673fb4;
+}
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(103, 58, 183, 0.5);
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(103, 58, 183, 0.5);
 }

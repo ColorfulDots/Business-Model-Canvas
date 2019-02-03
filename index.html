@@ -17,53 +17,58 @@
     <form class="js-form">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3 pt-2">
+          <div class="col-lg-9 pt-2">
             <h1 class="h4">Business Model Canvas</h1>
             <p>By <a href="https://colorfuldots.com">Colorful Dots, LLC</a></p>
           </div>
-          <div class="col-lg-7 pt-2">
+
+          <div class="col-lg-3 pt-2 d-print-none">
             <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <div class="form-group">
-                  <label>Designed For</label>
-                  <input name="designed-for" onkeyup="saveButton();" />
-                </div>
+              <div class="col-lg-6 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-block"
+                  onclick="clearButton();"
+                >
+                  Reset
+                </button>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="form-group">
-                  <label>Designed By</label>
-                  <input name="designed-by" onkeyup="saveButton();" />
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="form-group">
-                  <label>Date</label>
-                  <input name="designed-date" onkeyup="saveButton();" />
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="form-group">
-                  <label>Version</label>
-                  <input name="designed-version" onkeyup="saveButton();" />
-                </div>
+              <div class="col-lg-6 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-block"
+                  onclick="printButton();"
+                >
+                  Print
+                </button>
               </div>
             </div>
           </div>
-          <div class="col-lg-2 pt-4 text-right">
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              onclick="clearButton();"
-            >
-              Reset
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              onclick="printButton();"
-            >
-              Print
-            </button>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="form-group">
+              <label>Designed For</label>
+              <input name="designed-for" onkeyup="saveButton();" />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="form-group">
+              <label>Designed By</label>
+              <input name="designed-by" onkeyup="saveButton();" />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="form-group">
+              <label>Date</label>
+              <input name="designed-date" onkeyup="saveButton();" />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="form-group">
+              <label>Version</label>
+              <input name="designed-version" onkeyup="saveButton();" />
+            </div>
           </div>
         </div>
         <hr />
